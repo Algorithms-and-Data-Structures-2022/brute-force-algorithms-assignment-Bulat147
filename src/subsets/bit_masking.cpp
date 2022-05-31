@@ -24,10 +24,9 @@ namespace assignment {
         std::vector<int> subset;
         for (int position = 0; position < num_elems; position++) {
             if (is_bit_set(mask, position)) {
-                subset.push_back(position);
+                subsets[mask].push_back(position);
             }
         }
-        subsets.push_back(subset);
     }
     return subsets;
   }
